@@ -10,8 +10,10 @@
 </head>
 <body>
     <div class="jumbotron">
-            <h1 class="display-4">Hello, Students!</h1>
-            <img src="./images/sortinghat.png" id="sortinghat">
+            <div id="jumboTitle">
+                <img src="./images/sortinghat.png" id="sortinghat">
+                <h1 class="display-4">Hello, Students!</h1>
+            </div>
             <p class="lead">“A thousand years or more ago,
                 When I was newly sewn,
                 There lived four wizards of renown,
@@ -48,9 +50,23 @@
                 I'll have alook inside your mind 
                 And tell where you belong!”</p>
             <p class="lead">
-              <a class="btn btn-primary btn-lg" href="#" role="button">Slip on The Hat</a>
+              <a class="btn btn-primary btn-lg" href="#" role="button" id="sortMe">Slip on The Hat</a>
             </p>
     </div>
+
+    <form id="studentForm">
+            <div class="form-row">
+                <h1>Enter First Year's Name</h1>
+            </div>
+            <div class="form-inline">
+              <div class="form-group">
+                <label for="validationDefault01">Student: </label>
+                <input type="text" class="form-control" id="validationDefault01" placeholder="student name" value="Lilly Potter" required>
+                <button class="btn btn-primary" type="submit">Sort!</button>
+              </div>
+            </div>
+
+          </form>
     
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>

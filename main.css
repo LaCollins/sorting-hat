@@ -5,3 +5,22 @@ body {
     -o-background-size: cover;
     background-size: cover;
 }
+
+#jumboTitle {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+#sortinghat {
+    width: 30%;
+}
+
+#studentForm {
+    color: lightblue;
+    margin: 1em;
+}
+
+#validationDefault01 {
+    margin: 1em;
+}
