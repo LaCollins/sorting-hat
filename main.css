@@ -25,6 +25,10 @@ body {
     margin: 1em;
 }
 
+.card {
+    margin: 4px;
+}
+
 .Gryffindor {
     background-color: crimson;
     color: goldenrod;
