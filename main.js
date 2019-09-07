@@ -29,7 +29,7 @@ const studentBuilder = (studArr) => {
     for (let i = 0; i < studArr.length; i++) {
         const studentCard = studArr[i];
         domString += `
-            <div class="card text-center col-sm-4" id="studentCard">
+            <div class="card text-center col-sm-4 ${studentCard.house}" id="studentCard">
                 <div class="card-body">
                     <h5 class="card-title" id="name">${studentCard.name}</h5>
                     <p class="card-text" id="house">${studentCard.house}</p>
@@ -46,13 +46,16 @@ const studentBuilder = (studArr) => {
 
 }
 
-// const removeElement = (parentDiv, childDiv) => {
-//     if (document.getElementById(childDiv)) {
-//         let child = document.getElementById(childDiv);
-//         let parent = document.getElementById(parentDiv);
-//         parent.removeChild(child);
-//     };
+// const colorChange = (houseArray) => {
+//     // const card = document.getElementById("studentCard");
+//     if (houseArray.house === 'Gryffindor') {
+//         // card.style.setAttribute("style", "color: gold; border: 1px solid gold; background-color: crimson;");
+//         console.log('Gryffindor');
+//     } else {
+//         console.log('Not Gryffindor');
+//     }
 // };
+
 
 const buttonClick = (e) => {
     const type = e.target.id;
@@ -69,7 +72,6 @@ const buttonClick = (e) => {
         form.addEventListener('submit', (e) => {
             e.preventDefault();
             studentBuilder(studentArray);
-            return studentArray;
         });
     } else if (type.includes('expel')) {
         let idSplit = type.split('l');

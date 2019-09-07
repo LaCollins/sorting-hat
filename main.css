@@ -24,3 +24,42 @@ body {
 #formName {
     margin: 1em;
 }
+
+.Gryffindor {
+    background-color: crimson;
+    color: goldenrod;
+    border: 2px solid goldenrod;
+}
+
+.Slytherin {
+    background-color: green;
+    color: lightgray;
+    border: 2px solid lightgray;
+}
+
+.Hufflepuff {
+    background-color: gold;
+    color: black;
+    border: 2px solid black;
+}
+
+.Ravenclaw {
+    background-color: #000A90;
+    color: #946B2D;
+    border: 2px solid #946B2D;
+}
+
+.btn-primary {
+    background: black;
+    border: 1px solid black;
+}
+
+.btn-primary:hover {
+    background: darkgray;
+    border: 1px solid black;
+}
+
+.btn-primary:active, .btn-primary:focus {
+    background: lightgray;
+    border-color: darkgray;
+}
