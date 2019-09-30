@@ -52,16 +52,6 @@ const studentBuilder = (studArr) => {
 
 }
 
-// const colorChange = (houseArray) => {
-//     // const card = document.getElementById("studentCard");
-//     if (houseArray.house === 'Gryffindor') {
-//         // card.style.setAttribute("style", "color: gold; border: 1px solid gold; background-color: crimson;");
-//         console.log('Gryffindor');
-//     } else {
-//         console.log('Not Gryffindor');
-//     }
-// };
-
 
 const buttonClick = (e) => {
     const type = e.target.id;
@@ -94,5 +84,8 @@ const buttonClick = (e) => {
     };
 };      
 
-
+const init = () => {
 document.getElementById('sortMe').addEventListener('click', buttonClick);
+};
+
+init();
